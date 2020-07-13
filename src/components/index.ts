@@ -6,5 +6,6 @@ export * from './gridItem';
 export * from './header';
 export * from './input';
 export * from './output';
+export * from './retrospective';
 export * from './small';
 export * from './switch';

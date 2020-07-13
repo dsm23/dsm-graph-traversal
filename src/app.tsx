@@ -11,7 +11,15 @@ import 'twin.macro';
 import { FormProvider, useForm, useFieldArray } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
 
-import { Button, Header, Input, Output, Small, Switch } from './components';
+import {
+  Button,
+  Header,
+  Input,
+  Output,
+  Retrospective,
+  Small,
+  Switch,
+} from './components';
 
 interface FormData {
   dimensions?: number;
@@ -181,7 +189,9 @@ function App() {
     <div tw="mx-4">
       <Header />
       <main tw="container mx-auto mt-12">
+        <Retrospective />
         <Switch
+          tw="mt-16"
           checked={checked}
           onClick={toggle}
           label={checked ? 'Textarea format' : 'Grid format'}
